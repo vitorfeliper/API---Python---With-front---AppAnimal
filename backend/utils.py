@@ -1,3 +1,7 @@
+
+# WARD
+# https://www.freecodecamp.org/news/how-to-add-jwt-authentication-in-fastapi/
+
 from passlib.context import CryptContext
 import os
 from datetime import datetime, timedelta
