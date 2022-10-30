@@ -5,11 +5,32 @@
 # PetStore API
 #
 from fastapi import FastAPI, Request, Response
+from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
 from pydantic import BaseModel
 from uuid import uuid4
 
 app = FastAPI()
+
+# ========================== CORS ================================ #
+
+origins = [
+    'http://localhost:5500',
+    'http://localhost:8080',
+    'http://localhost:5000',
+    'http://127.0.0.1:5500',
+    'https://c73c-2804-7f5-d080-867c-c907-7279-ffb3-939d.ngrok.io'
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins  ,
+    allow_credentials=True ,
+    allow_methods=["*"]    ,
+    allow_headers=["*"]
+)
+
+# ================================================================ #
 
 class Animal(BaseModel):
     id: Optional[str]
