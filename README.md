@@ -10,6 +10,6 @@ API com 3 CRUDS<br>
     <li> II  - uvicorn (pip install uvicorn)</li>
     <li> III - FastAPI (pip install fastapi)</li>
     <li> IV  - live server (VS_CODE extension)</li>
-</ul><br><br><br><br>
+</ul><br><br>
 
 2 - Video de uso: https://youtu.be/LvcilqPkESs
