@@ -9,8 +9,7 @@ API com 3 CRUDS<br>
     <li> I   - Python 3.10 ↑</li>
     <li> II  - uvicorn (pip install uvicorn)</li>
     <li> III - FastAPI (pip install fastapi)</li>
-    <li> IV  - uvicorn (pip install uvicorn)</li>
-    <li> V   - live server (VS_CODE extension)</li>
+    <li> IV  - live server (VS_CODE extension)</li>
 </ul><br><br><br><br>
 
 2 - Video de uso: https://youtu.be/LvcilqPkESs
