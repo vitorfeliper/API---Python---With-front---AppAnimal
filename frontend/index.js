@@ -9,9 +9,27 @@ async function LoadAnimals() {
 
     animals.forEach(animal => {
         const item = document.createElement('li');
-        item.innerText = animal.name;
-        list.appendChild(item); 
+
+        const line = `ID: ${animal.id} - Nome: ${animal.name} - Idade: ${animal.age} - Cor: ${animal.color} - Sexo: ${animal.sex} - Tipo: ${animal.type}`;
+        item.innerText = line;
+        list.appendChild(item);
     });
+}
+
+function m_form_deleteByID() {
+    const form_animalsID = document.getElementById('form-delete-animal')
+    const input_id = document.getElementById('id-animal-to-delete');
+
+
+    form_animalsID.onsubmit = async(event) => {
+        event.preventDefault();
+        const animal_id = input_id.value;
+
+        await axios.delete(`http://localhost:8000/animals/${animal_id}`);
+
+        alert(`Animal deletado com sucesso`);
+        LoadAnimals();
+    }
 }
 
 function m_form() {
@@ -49,6 +67,7 @@ function App() {
     console.log('App initialized');
     LoadAnimals();
     m_form();
+    m_form_deleteByID();
 }
 
 App()
