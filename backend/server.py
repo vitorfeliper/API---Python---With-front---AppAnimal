@@ -59,7 +59,6 @@ async def CreateAnimal(animal: Animal):
 #==================================================================#
 
 #========================== CRUD DELETE ============================#
-
 # delete
 @app.delete('/animals/{animal_id}')
 async def RemoveAnimal(animal_id: str):
