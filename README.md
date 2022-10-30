@@ -3,7 +3,7 @@ Backend usando a linguagem python<br>
 API com 3 CRUDS<br>
 <br>
 <br>
-================================= INSTALAÇÃO =================================================
+================================= INSTALAÇÃO ===========================
 1 - Certifique-se de ter os seguintes itens instalados em seu computador
 <ul>
     <li> I   - Python 3.10 ↑</li>
