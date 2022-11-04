@@ -1,0 +1,178 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-11-04T04:25:04.306Z",
+  "__export_source": "insomnia.desktop.app:v2022.6.0",
+  "resources": [
+    {
+      "_id": "req_56173a18f17e49d19e48a044168eff73",
+      "parentId": "fld_5a7d42ee87444b63886b170779ecf7a7",
+      "modified": 1667522328402,
+      "created": 1667067910789,
+
+      "url": "http://localhost:8000/animals",
+      "name": "ListAnimals",
+      "description": "",
+
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1667067910789,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_5a7d42ee87444b63886b170779ecf7a7",
+      "parentId": "fld_91f50153436b48bfb46af25346622f31",
+      "modified": 1667522109006,
+      "created": 1667067899048,
+      "name": "API_ANIMALS",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": {},
+      "metaSortKey": -1667067899048,
+      "_type": "request_group"
+    },
+
+    {
+      "_id": "fld_91f50153436b48bfb46af25346622f31",
+      "parentId": "wrk_f2c0219ba00141228ad20b61741b7621",
+      "modified": 1667522162200,
+      "created": 1667065633525,
+      "name": "TM2_API",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": {},
+      "metaSortKey": -1667065633525,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_f2c0219ba00141228ad20b61741b7621",
+      "parentId": null,
+      "modified": 1667065589608,
+      "created": 1667065589608,
+      "name": "TM2",
+      "description": "",
+      "scope": "design",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_88938af5f71e490cb0530871b9ffc2b7",
+      "parentId": "fld_5a7d42ee87444b63886b170779ecf7a7",
+      "modified": 1667535771852,
+      "created": 1667067976756,
+      "url": "http://localhost:8000/animals",
+      "name": "RegisterAnimal",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"type\" : \"Dog\",\n\t\"name\" : \"Bicuço\",\n\t\"age\"  : 14,\n\t\"sex\"  : \"Unknow\",\n\t\"color\": \"White\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_ceddc895a94540c686d7f858e3b2c64c"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1667067392770.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b126cae118e44bcc8ff8faa680a79070",
+      "parentId": "fld_5a7d42ee87444b63886b170779ecf7a7",
+      "modified": 1667086568188,
+      "created": 1667084584459,
+      "url": "http://localhost:8000/animals/",
+      "name": "GetAnimal",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1667067651779.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_bc80c6e4b6dd49a4afa31853d6f02917",
+      "parentId": "fld_5a7d42ee87444b63886b170779ecf7a7",
+      "modified": 1667535794853,
+      "created": 1667085538128,
+      "url": "http://localhost:8000/animals/9d0441e1-c6e7-476a-a185-4cfebeabe093",
+      "name": "DeleteAnimal",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1667067522275.125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_a1cf88b8d7117419309d5b72ade107e67b8841e9",
+      "parentId": "wrk_f2c0219ba00141228ad20b61741b7621",
+      "modified": 1667065589615,
+      "created": 1667065589615,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1667065589615,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_a1cf88b8d7117419309d5b72ade107e67b8841e9",
+      "parentId": "wrk_f2c0219ba00141228ad20b61741b7621",
+      "modified": 1667065589618,
+      "created": 1667065589618,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_3de8a6785b2d4b0087f0028f52104e3e",
+      "parentId": "wrk_f2c0219ba00141228ad20b61741b7621",
+      "modified": 1667065589610,
+      "created": 1667065589610,
+      "fileName": "TM2",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
