@@ -4,13 +4,40 @@ async function LoadAnimals() {
     const response = await axios.get('http://localhost:8000/animals')
     const animals = response.data
     const list = document.getElementById('animals-list');
+    var count = 0;
 
     list.innerHTML = '';
 
     animals.forEach(animal => {
         const item = document.createElement('li');
 
-        const line = `ID: ${animal.id} - Nome: ${animal.name} - Idade: ${animal.age} - Cor: ${animal.color} - Sexo: ${animal.sex} - Tipo: ${animal.type}`;
+        const line = `
+        ------------------------------------------------------------------
+        ID: ${animal.id}\nNome: ${animal.name}\nIdade: ${animal.age}\nCor: ${animal.color}\nSexo: ${animal.sex}\nTipo: ${animal.type}
+        ------------------------------------------------------------------`;
+        if(animal.color == "Branco" || animal.color == "branco"){
+            item.style.color = "White";
+        }
+        if(animal.color == "Preto" || animal.color == "preto"){
+            item.style.color = "Black";
+            item.style.textShadow = "0.5px 1px white";
+            item.style.textDecoration = "solid"
+        }
+        if(animal.color == "Amarelo" || animal.color == "amarelo"){
+            item.style.color = "Yellow";
+        }
+        if(animal.color == "Laranja" || animal.color == "laranja"){
+            item.style.color = "Orange";
+        }
+        if(animal.color == "Verde" || animal.color == "verde"){
+            item.style.color = "Green";
+        }
+        if(animal.color == "Azul" || animal.color == "azul"){
+            item.style.color = "Blue";
+        }
+        if(animal.color == "Vermelho" || animal.color == "vermelho"){
+            item.style.color = "Red";
+        }
         item.innerText = line;
         list.appendChild(item);
     });
@@ -39,7 +66,6 @@ function m_form() {
     const input_age = document.getElementById('age');
     const input_sex = document.getElementById('sex');
     const input_color = document.getElementById('color');
-
 
     form_animals.onsubmit = async(event) => {
         event.preventDefault();
