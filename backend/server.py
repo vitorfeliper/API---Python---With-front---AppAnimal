@@ -1,9 +1,19 @@
 # ===================== DOCUMENTATION ======================================
-# Copyright (c) 2022-2022, Vitor Felipe Ramos Mello && Marcio Fossa Junior, VDEV.MarcioJR  - GGSS
+# Copyright (c) 2022-2022, Vitor Felipe Ramos Mello && Marcio Fossa Junior, VDEV.MarcioJR - GGSS
+# Universidade do Vale do Itajaí - Ciência Da Computação - Programação Web
+# v0.1 - Criação da API
+# v0.2 - Testes da API
+# v0.3 - Entrega da API
+# v0.4 - Consumo de API com frontend básico
+# v0.6 - Atualização do frontend
+# (current) v0.7 Atualização da documentação
 #
-# TESTING API
-# PetStore API
 #
+#
+#
+#
+
+
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
@@ -32,7 +42,7 @@ app.add_middleware(
 )
 
 # ================================================================ #
-
+# ========================= ANIMAL MODEL ========================= #
 class Animal(BaseModel):
     id: Optional[str]
     type: str
