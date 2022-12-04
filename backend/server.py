@@ -30,7 +30,11 @@ origins = [
     'http://localhost:5000',
     'http://127.0.0.1:5500',
     'https://c73c-2804-7f5-d080-867c-c907-7279-ffb3-939d.ngrok.io',
-    'https://a44a-2804-7f5-d080-867c-e586-1daa-b640-63c1.ngrok.io'
+    'https://a44a-2804-7f5-d080-867c-e586-1daa-b640-63c1.ngrok.io',
+    'https://9377-2804-1b2-6043-bb9a-4059-bd58-eaae-66d1.ngrok.io',
+    'https://26e1-2804-1b2-6043-bb9a-4059-bd58-eaae-66d1.ngrok.io',
+    'https://9e83-2804-1b2-6043-bb9a-4059-bd58-eaae-66d1.ngrok.io',
+    'https://f703-2804-1b2-6043-bb9a-4059-bd58-eaae-66d1.ngrok.io'
 ]
 
 app.add_middleware(
