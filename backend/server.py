@@ -34,7 +34,8 @@ origins = [
     'https://9377-2804-1b2-6043-bb9a-4059-bd58-eaae-66d1.ngrok.io',
     'https://26e1-2804-1b2-6043-bb9a-4059-bd58-eaae-66d1.ngrok.io',
     'https://9e83-2804-1b2-6043-bb9a-4059-bd58-eaae-66d1.ngrok.io',
-    'https://f703-2804-1b2-6043-bb9a-4059-bd58-eaae-66d1.ngrok.io'
+    'https://f703-2804-1b2-6043-bb9a-4059-bd58-eaae-66d1.ngrok.io',
+    'https://12d8-179-162-171-60.sa.ngrok.io'
 ]
 
 app.add_middleware(
